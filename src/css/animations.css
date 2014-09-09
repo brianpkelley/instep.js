@@ -1,0 +1,212 @@
+.fade-out {
+	-webkit-animation-name: fade-out;
+	-webkit-animation-duration: 4s;
+	-webkit-animation-timing-function: linear;
+	-webkit-animation-iteration-count: 1;
+	-webkit-animation-direction: normal;
+    -webkit-animation-fill-mode: forwards;
+
+	animation-name: fade-out;
+	animation-duration: 4s;
+	animation-timing-function: linear;
+	animation-iteration-count: 1;
+	animation-direction: normal;
+    animation-fill-mode: forwards;
+
+}
+
+@-webkit-keyframes fade-out {
+   0% {
+       opacity: 1;
+   }
+
+   100% {
+       opacity: 0;
+   }
+}
+
+@keyframes fade-out {
+   0% {
+       opacity: 1;
+   }
+
+   100% {
+       opacity: 0;
+   }
+}
+
+
+
+
+
+
+.fade-in {
+	-webkit-animation-name: fade-in;
+	-webkit-animation-duration: 4s;
+	-webkit-animation-timing-function: linear;
+	-webkit-animation-iteration-count: 1;
+	-webkit-animation-direction: normal;
+    -webkit-animation-fill-mode: forwards;
+
+	animation-name: fade-in;
+	animation-duration: 4s;
+	animation-timing-function: linear;
+	animation-iteration-count: 1;
+	animation-direction: normal;
+    animation-fill-mode: forwards;
+
+}
+
+@-webkit-keyframes fade-in {
+   0% {
+       opacity: 0;
+   }
+
+   100% {
+       opacity: 1;
+   }
+}
+
+@keyframes fade-in {
+   0% {
+       opacity: 0;
+   }
+
+   100% {
+       opacity: 1;
+   }
+}
+
+
+
+
+
+
+
+
+.fade-out {
+	-webkit-animation-name: fade-out;
+	-webkit-animation-duration: 4s;
+	-webkit-animation-timing-function: linear;
+	-webkit-animation-iteration-count: 1;
+	-webkit-animation-direction: normal;
+    -webkit-animation-fill-mode: forwards;
+
+	animation-name: fade-out;
+	animation-duration: 4s;
+	animation-timing-function: linear;
+	animation-iteration-count: 1;
+	animation-direction: normal;
+    animation-fill-mode: forwards;
+
+}
+
+@-webkit-keyframes fade-out {
+   0% {
+       opacity: 1;
+   }
+
+   100% {
+       opacity: 0;
+   }
+}
+
+@keyframes fade-out {
+   0% {
+       opacity: 1;
+   }
+
+   100% {
+       opacity: 0;
+   }
+}
+
+
+
+
+
+
+.blink-in {
+	-webkit-animation-name: blink-in;
+	-webkit-animation-duration: .4s;
+	-webkit-animation-timing-function: linear;
+	-webkit-animation-iteration-count: 1;
+	-webkit-animation-direction: normal;
+  -webkit-animation-fill-mode: forwards;
+
+	animation-name: blink-in;
+	animation-duration: .4s;
+	animation-timing-function: linear;
+	animation-iteration-count: 1;
+	animation-direction: normal;
+  animation-fill-mode: forwards;
+	
+	display: block;
+
+}
+
+@-webkit-keyframes blink-in {
+   0% {
+       opacity: 0;
+   }
+
+   100% {
+       opacity: 1;
+   }
+}
+
+@keyframes blink-in {
+   0% {
+       opacity: 0;
+   }
+
+   100% {
+       opacity: 1;
+   }
+}
+
+
+
+
+.blink-out {
+	-webkit-animation-name: blink-out;
+	-webkit-animation-duration: .4s;
+	-webkit-animation-timing-function: linear;
+	-webkit-animation-iteration-count: 1;
+	-webkit-animation-direction: normal;
+  -webkit-animation-fill-mode: forwards;
+
+	animation-name: blink-out;
+	animation-duration: .4s;
+	animation-timing-function: linear;
+	animation-iteration-count: 1;
+	animation-direction: normal;
+  animation-fill-mode: forwards;
+	
+	display: block;
+
+}
+
+@-webkit-keyframes blink-out {
+   0% {
+       opacity: 1;
+   }
+
+   100% {
+       opacity: 0;
+   }
+}
+
+@keyframes blink-out {
+   0% {
+       opacity: 1;
+   }
+
+   100% {
+       opacity: 0;
+   }
+}
+
+
+
+

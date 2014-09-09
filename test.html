@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>inStep.js Dev Test Page</title>
+
+	<script src="src/js/polyfill.js"></script>
+	<script src="src/js/core.js"></script>
+	<script src="src/js/lib.js"></script>
+	<script src="src/js/dataParser.js"></script>
+	<script src="src/js/cssRules.js"></script>
+	<script src="src/js/animation.js"></script>
+	<script src="src/js/animationController.js"></script>
+	<script src="src/js/loopController.js"></script>
+	
+	<script src="src/js/autorun.js"></script>
+	
+	<script src="src/js/class.js"></script>
+	<script src="src/js/tech/base.js"></script>
+	<script src="src/js/tech/html.js"></script>
+	
+	<link href="src/css/animations.css" rel="stylesheet" />
+	
+	<style>
+		.square {
+			height: 100px;
+			width: 100px;
+			background: #ff8c30;
+			opacity: 0;
+		}
+		.square.blue {
+			background: #388fff;
+		}
+		.square.green {
+			background: #8bff61;
+		}
+		.active {
+			display: block;
+			opacity: 1;
+		}
+		
+		h1,h2,h3,h4,h5,h6 {
+			opacity: 0;
+			display: none;
+		}
+		
+		
+	</style>
+	
+</head>
+
+<body>
+	<img src="instepjs.jpg" /><br />
+	<video id="video_1" class="video-js vjs-default-skin" controls
+		preload="auto" width="640" height="264" poster="http://video-js.zencoder.com/oceans-clip.jpg"
+		data-setup="{}">
+		<source src="http://video-js.zencoder.com/oceans-clip.mp4" type='video/mp4'>
+		<source src="http://video-js.zencoder.com/oceans-clip.webm" type='video/webm'>
+	</video>
+	
+	<h1 data-instep="video_1" data-instep-animations="blink-in[0.1,7.8]{active} blink-out[5.5,10.8]{!active}">Seagulls!</h1>
+	<h3 data-instep="video_1" data-instep-animations="blink-in[4.8,10.5]{active} blink-out[5.5,11.2]{!active}">Splash!!!!</h3>
+	<h3 data-instep="video_1" data-instep-animations="blink-in[12.2]{active} blink-out[12.6]{!active}">Splash!!!!</h3>
+	<h3 data-instep="video_1" data-instep-animations="blink-in[12.4]{active} blink-out[12.8]{!active}">Splash!!!!</h3>
+	<h3 data-instep="video_1" data-instep-animations="blink-in[12.6]{active} blink-out[13]{!active}">Splash!!!!</h3>
+	<h3 data-instep="video_1" data-instep-animations="blink-in[12.8]{active} blink-out[13.2]{!active}">Splash!!!!</h3>
+	<h3 data-instep="video_1" data-instep-animations="blink-in[13]{active} blink-out[13.4]{!active}">Splash!!!!</h3>
+	<h1 data-instep="video_1" data-instep-animations="blink-in[5.5,10.8]{active} blink-out[7.75,11.5]{!active}">Fish!</h1>
+	<!--
+	<div data-instep="video_1" data-instep-animations='{"fade-in":{"2":["callbackFn()"],"14":["test.testFn()"],"callbacks":["active"]},"fade-out":{"8":["!active", "blue"],"22":[]}}' class="square"></div>
+	<div data-instep="video_1" data-instep-animations='fade-in[4{active,callbackFn(),green},16{active}] fade-out[10{!active},24]' class="square blue"></div>
+	<div data-instep="video_1" data-instep-animations='blink-in[1,2,3,4,5,6,7,8,9,10]{active} blink-out[1.5{!active},2.5{!active},3.5{!active},4.5{!active},5.5{!active},6.5{!active},7.5{!active},8.5{!active},9.5{!active},10.5{!active}]' class="square green"></div>
+	<div class="square blue" id="javascriptAdd"></div>
+	-->
+	<script>
+		
+		window.test = { testFn: function() { console.log("Test Function()") } };
+		
+		callbackFn = function() {
+			console.log('Callback!!!!');
+		}
+		
+		new instepjs( 'video_1', 'instep', function() {
+		//	this.addAnimation( document.getElementById('javascriptAdd'), 'blink-in[1,2,3,4,5,6,7,8,9,10]{active} blink-out[1.5,2.5,3.5,4.5,5.5,6.5,7.5,8.5,9.5,10.5]{!active}' );
+		});
+		
+		
+	</script>
+</body>
